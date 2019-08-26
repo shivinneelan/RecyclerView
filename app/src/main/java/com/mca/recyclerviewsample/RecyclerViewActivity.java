@@ -15,6 +15,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
     private RecyclerView.Adapter adapter;
     private List<ListItem> listItems;
+    Integer count;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,17 +26,24 @@ public class RecyclerViewActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(RecyclerViewActivity.this));
         listItems = new ArrayList<>();
-        ListItem listItem = null;
+        ListItem listItem = null;  // class ListItem to store data
 
-        for(int i=0;i<10;i++)
+        Bundle bundle=getIntent().getExtras();
+        if(bundle!=null)
         {
-            listItem = new ListItem(
-                    "1","","","","","","","" );
-            listItems.add(listItem);
+            count=bundle.getInt("count");
+            for(int i=1;i<=count;i++)
+            {
+                listItem = new ListItem(
+                        i );
+                listItems.add(listItem);
+            }
         }
 
-        listItems.add(listItem);
-        adapter = new RecyclerviewAdapter(listItems, RecyclerViewActivity.this);
+
+
+        adapter = new AdapterClass(listItems, RecyclerViewActivity.this);
+
         recyclerView.setAdapter(adapter);
     }
 }
