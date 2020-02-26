@@ -14,54 +14,94 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="10dp"
         app:cardUseCompatPadding="true"
-        tools:cardBackgroundColor="@color/common_google_signin_btn_text_dark_default"
+        android:elevation="5dp"
         tools:ignore="MissingConstraints"
         android:clickable="true"
+        android:layout_margin="10dp"
         >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:layout_marginBottom="0dp"
             android:gravity="center"
             android:orientation="vertical">
-
             <TextView
-                android:id="@+id/text1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/personDetails"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginStart="0dp"
-
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="0dp"
-                android:layout_marginBottom="0dp"
-                android:hint="Card Number"
-                android:textAlignment="center"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textSize="24sp" />
+                android:hint="Person Details  : "
+                android:textSize="20sp"
+                />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/id"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:text="Demo Text" />
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Id"
+                android:textSize="18sp"
+                />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/name"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="TextView" />
+                android:layout_height="30dp"
+                android:text="Name"
+                android:textSize="18sp"
+                />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/email"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="TextView" />
+                android:layout_height="30dp"
+                android:text="Email"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Address"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Gender"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="Contact  :"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Mobile"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Home"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/office"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Office"
+                android:textSize="18sp"
+                />
 
 
         </LinearLayout>

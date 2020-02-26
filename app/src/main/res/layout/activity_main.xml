@@ -29,5 +29,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Submit" />
+        android:text="Linear Recycler ViewSubmit" />
+
+    <Button
+        android:id="@+id/buttonGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Grid Recycler View Submit" />
+
 </android.support.v7.widget.LinearLayoutCompat>
